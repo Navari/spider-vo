@@ -1,0 +1,20 @@
+{
+    "authors": [
+        {
+            "name": "Celalettin YILMAZ",
+            "email": "celalettin1986@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Navari\\Spider\\": "src/"
+        }
+    },
+    "description": "spider vo scrapper",
+    "license": "MIT",
+    "name": "navari/spider-vo",
+    "require": {
+        "guzzlehttp/guzzle": "^7.2"
+    },
+    "type": "library"
+}
