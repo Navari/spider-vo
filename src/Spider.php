@@ -202,10 +202,10 @@ class Spider
         return Request::get(self::MAIN_URL. $url);
     }
 
-    public function get($page)
+    public function get($page): array
     {
-        $response = $this->buildQuery($page);
-        echo $response->raw_body;
+        $response = $this->matchResponse($this->buildQuery($page));
+        return $response;
     }
 
     private function getTotalPageCount($response)
